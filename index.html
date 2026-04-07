@@ -1,0 +1,659 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="noindex, nofollow" />
+    <title>スナック池</title>
+    <link rel="stylesheet" href="css/style.css?v=3" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap"
+      rel="stylesheet" />
+
+    <script src="js/iosvh.js"></script>
+  </head>
+  <body>
+    <!-- 電話アイコン（1箇所定義して再利用） -->
+    <svg xmlns="http://www.w3.org/2000/svg" style="display: none">
+      <symbol id="icon-phone" viewBox="0 0 24 24">
+        <path
+          d="M6.6 10.8c1.6 3.1 3.5 5 6.6 6.6l2.2-2.2c.3-.3.8-.4 1.2-.3 1.3.4 2.7.6 4.1.6.7 0 1.2.5 1.2 1.2V21c0 .7-.5 1.2-1.2 1.2C10.3 22.2 1.8 13.7 1.8 3.3 1.8 2.6 2.3 2 3 2h3.5c.7 0 1.2.5 1.2 1.2 0 1.4.2 2.8.6 4.1.1.4 0 .9-.3 1.2l-2.4 2.3z" />
+      </symbol>
+    </svg>
+
+    <div class="page-wrap">
+      <!--ヒーローセクション-->
+      <header class="hero">
+        <div class="slider">
+          <img src="images/slide1.webp" class="active" />
+          <img src="images/slide2.webp" />
+          <img src="images/slide3.webp" />
+        </div>
+        <div class="hero-text">
+          <h1>
+            心がほっとする
+            <br />
+            帰りたくなる場所
+          </h1>
+        </div>
+      </header>
+
+      <!-- title セクション -->
+      <section class="title">
+        <h2>スナック池へようこそ</h2>
+        <p>
+          創業58年、昭和から続く老舗スナック。三代目ママがお迎えします。
+          <br />
+          肩の力を抜いて、ゆっくりしていってください。
+          <br />
+          お一人様でもふらりと立ち寄れば、気づけばみんな顔なじみになっているお店です。
+        </p>
+      </section>
+      <!-- 営業時間セクション -->
+      <section class="info">
+        <!-- 営業ステータス -->
+        <div class="open-status" id="openStatus">
+          <span class="status-dot" id="statusDot"></span>
+          <span class="status-text" id="statusText">確認中...</span>
+        </div>
+        <!-- 見出し -->
+        <h2 class="section-title">🕒 営業時間</h2>
+
+        <!-- 時間 -->
+        <div class="info-box">
+          <p class="time">19:00 ～ 25:00</p>
+          <p class="time-sub">金・土曜日は 19:00 ～ 26:00</p>
+          <p class="holiday">休日：毎週【火曜日・日曜日】</p>
+          <p class="note">※ご来店前にお電話いただけると安心です</p>
+        </div>
+        <!-- 電話ボタン（落ち着いたデザイン・デスクトップ向け） -->
+        <a href="tel:09012345678" class="phone-btn phone-btn--calm">
+          <svg
+            class="phone-icon"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24">
+            <use href="#icon-phone" />
+          </svg>
+          予約はこちら
+        </a>
+        <p class="phone-note">※タップで電話がかかります</p>
+      </section>
+
+      <!-- フューチャーセクション -->
+      <section class="features">
+        <h2>選ばれる３つの理由</h2>
+
+        <div class="feature-card">
+          <h3>初めてでも安心</h3>
+          <p>女性お一人様でも実家のような安心感</p>
+        </div>
+
+        <div class="feature-card">
+          <h3>心通い合う癒しの場</h3>
+          <p>顔が見えるからこそ通じ合う</p>
+          <p>温かい接客を大事にしています</p>
+        </div>
+
+        <div class="feature-card">
+          <h3>和気あいあいの昭和レトロ</h3>
+          <p>お客様同士がすぐ仲良くなれる</p>
+          <p>居心地の良い空間です</p>
+        </div>
+      </section>
+
+      <!-- ママセクション -->
+      <section class="mama">
+        <div class="mama-card">
+          <img src="images/Mama_Photo.jpg" alt="ママ" class="mama-photo" />
+
+          <h3>スナック池ママ</h3>
+
+          <p class="mama-message">
+            懐かしの昭和レトロな空間で心がほっとする時間をお過ごしください。
+            <br />
+            初めての方も、常連さんも、みんなで楽しく過ごせるお店です。
+          </p>
+        </div>
+      </section>
+
+      <!-- Price -->
+      <section class="price">
+        <h2 class="price-title">料金表</h2>
+        <p class="price-tax-note">※ 表示価格はすべて税込みです</p>
+
+        <!-- 飲み放題 -->
+        <div class="price-block">
+          <h3 class="price-block-title">🍺 飲み放題</h3>
+          <div class="price-table">
+            <div class="price-row">
+              <p class="price-name">お一人様 2時間</p>
+              <p class="price-value">3,300円</p>
+            </div>
+            <div class="price-row">
+              <p class="price-name">カラオケ 1曲</p>
+              <p class="price-value">100円</p>
+            </div>
+            <div class="price-row">
+              <p class="price-name">延長料金 30分</p>
+              <p class="price-value">500円</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- セット料金 -->
+        <div class="price-block">
+          <h3 class="price-block-title">🥃 セット料金</h3>
+          <div class="price-table">
+            <div class="price-row">
+              <p class="price-name">お一人様</p>
+              <p class="price-value">2,200円</p>
+            </div>
+            <div class="price-row">
+              <p class="price-name">カラオケ 1曲</p>
+              <p class="price-value">100円</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="gallery">
+        <h2 class="gallery-title">📸 店内の様子</h2>
+        <div class="gallery-rails">
+          <h3 class="gallery-subtitle">店内全景</h3>
+          <div
+            class="gallery-rail gallery-rail--wide"
+            aria-label="店内全景の写真">
+            <img
+              src="images/gallery_wide1.jpg"
+              alt="店内全体（入口側から）"
+              data-caption="店内全体（入口側から）" />
+            <img
+              src="images/gallery_wide2.jpg"
+              alt="カウンター全体"
+              data-caption="カウンター全体" />
+          </div>
+
+          <h3 class="gallery-subtitle">雰囲気</h3>
+          <div
+            class="gallery-rail gallery-rail--portrait"
+            aria-label="雰囲気の写真">
+            <img
+              src="images/gallery_atm1.jpg"
+              alt="席の雰囲気"
+              data-caption="席の雰囲気" />
+            <img
+              src="images/gallery_atm2.jpg"
+              alt="ボトル棚"
+              data-caption="ボトル棚" />
+            <img
+              src="images/gallery_atm3.jpg"
+              alt="ネオン"
+              data-caption="ネオン" />
+            <img
+              src="images/gallery_atm4.jpg"
+              alt="カラオケ"
+              data-caption="カラオケ" />
+            <img
+              src="images/gallery_atm5.jpg"
+              alt="テーブルまわり"
+              data-caption="テーブルまわり" />
+            <img
+              src="images/gallery_atm6.jpg"
+              alt="店名が分かるポイント"
+              data-caption="店名が分かるポイント" />
+            <img
+              src="images/gallery_atm7.jpg"
+              alt="落ち着いた照明"
+              data-caption="落ち着いた照明" />
+          </div>
+
+          <p class="gallery-hint">
+            ※横にスワイプすると、他の写真もご覧いただけます
+          </p>
+        </div>
+      </section>
+
+      <!-- アクセスセクション -->
+      <section class="access">
+        <h2 class="access-title">🗺️ アクセス</h2>
+
+        <div class="access-video">
+          <button
+            class="access-video-card"
+            type="button"
+            aria-label="動画で場所を見る">
+            <img
+              src="images/access_thumb.png"
+              alt="住吉駅からスナック池への道順"
+              class="access-video-thumb-img" />
+            <div class="access-video-overlay">
+              <span class="access-video-play-icon">▶</span>
+              <p class="access-video-title">動画で道順を見る</p>
+              <p class="access-video-note">入口までの道順を動画でご案内</p>
+            </div>
+          </button>
+        </div>
+        <div class="access-info">
+          <div class="access-row">
+            <span class="access-icon">📍</span>
+            <p>
+              住所
+              <br />
+              〒852-8154
+              <br />
+              長崎県長崎市住吉町５−２
+              <br />
+              長崎北部産業ビル２階
+            </p>
+          </div>
+          <div class="access-row">
+            <span class="access-icon">🚃</span>
+            <p>
+              最寄駅：住吉駅
+              <span class="full-width-space">　</span>
+              徒歩5分
+            </p>
+          </div>
+        </div>
+
+        <div class="access-btn-wrap">
+          <a
+            href="https://maps.app.goo.gl/PFvKm37gTyzhXvJ88"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="map-btn">
+            Google Mapで見る
+          </a>
+        </div>
+      </section>
+
+      <!-- Contact / Reservation -->
+      <section class="contact">
+        <h2 class="contact-title">ご予約・お問い合わせはこちら</h2>
+
+        <p class="contact-lead">
+          「今日行きたい」「○日に空いてる？」など、
+          <br />
+          まずはお気軽にご連絡ください。
+        </p>
+
+        <div class="contact-buttons">
+          <a href="tel:09012345678" class="phone-btn contact-phone-btn">
+            <svg
+              class="phone-icon"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24">
+              <use href="#icon-phone" />
+            </svg>
+            電話で予約する
+          </a>
+          <a
+            href="mailto:info@example.com"
+            class="contact-btn contact-btn-mail">
+              <svg class="phone-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4-8 5-8-5V6l8 5 8-5v2z"/>
+                  </svg>
+                        メールで予約する
+                          </a>
+                              </div>
+
+        <p class="contact-note">
+          ※営業時間外の場合は、翌営業日に折り返しご連絡いたします。
+        </p>
+      </section>
+
+      <!-- Footer -->
+      <footer class="site-footer">
+        <div class="footer-social">
+          <a
+            href="https://www.instagram.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="footer-social-link"
+            aria-label="Instagram">
+            <svg
+              class="footer-social-icon"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="currentColor"
+              aria-hidden="true">
+              <path
+                d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z" />
+            </svg>
+          </a>
+          <a
+            href="https://twitter.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="footer-social-link"
+            aria-label="X（旧Twitter）">
+            <svg
+              class="footer-social-icon"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="currentColor"
+              aria-hidden="true">
+              <path
+                d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
+            </svg>
+          </a>
+          <a
+            href="https://line.me/"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="footer-social-link"
+            aria-label="LINE">
+            <svg
+              class="footer-social-icon"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              aria-hidden="true">
+              <path
+                fill="currentColor"
+                d="M19.365 9.863c.349 0 .63.285.63.631 0 .345-.281.63-.63.63H17.61v1.125h1.755c.349 0 .63.283.63.63 0 .344-.281.629-.63.629h-2.386c-.345 0-.627-.285-.627-.629V8.108c0-.345.282-.63.63-.63h2.386c.346 0 .627.285.627.63 0 .349-.281.63-.63.63H17.61v1.125h1.755zm-3.855 3.016c0 .27-.174.51-.432.596-.064.021-.133.031-.199.031-.211 0-.391-.09-.51-.25l-2.443-3.317v2.94c0 .344-.279.629-.631.629-.346 0-.626-.285-.626-.629V8.108c0-.27.173-.51.43-.595.06-.023.136-.033.194-.033.195 0 .375.104.495.254l2.462 3.33V8.108c0-.345.282-.63.63-.63.345 0 .63.285.63.63v4.771zm-5.741 0c0 .344-.282.629-.631.629-.345 0-.627-.285-.627-.629V8.108c0-.345.282-.63.63-.63.346 0 .628.285.628.63v4.771zm-2.466.629H4.917c-.345 0-.63-.285-.63-.629V8.108c0-.345.285-.63.63-.63.348 0 .63.285.63.63v4.141h1.756c.348 0 .629.283.629.63 0 .344-.281.629-.629.629M24 10.314C24 4.943 18.615.572 12 .572S0 4.943 0 10.314c0 4.811 4.27 8.842 10.035 9.608.391.082.923.258 1.058.59.12.301.079.766.039 1.085l-.164 1.02c-.045.301-.24 1.186 1.049.645 1.291-.539 6.916-4.078 9.436-6.975C23.176 14.393 24 12.458 24 10.314" />
+            </svg>
+          </a>
+        </div>
+
+        <p class="footer-copy">© 2026 スナック池 All Rights Reserved.</p>
+      </footer>
+    </div>
+
+    <!-- スマホ専用・画面下部固定の電話ボタン（親指ゾーン） -->
+    <a
+      href="tel:09012345678"
+      class="fixed-phone"
+      aria-label="空き確認・今すぐ電話">
+      <svg
+        class="fixed-phone-icon"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 24 24">
+        <use href="#icon-phone" />
+      </svg>
+      <span class="fixed-phone-text">空き確認！今すぐ電話</span>
+    </a>
+
+    <!-- Gallery Lightbox -->
+    <div class="lightbox" id="lightbox" aria-hidden="true">
+      <div
+        class="lightbox-inner"
+        role="dialog"
+        aria-modal="true"
+        aria-label="ギャラリー拡大表示">
+        <button class="lightbox-close" type="button" aria-label="閉じる">
+          ×
+        </button>
+        <button
+          class="lightbox-btn lightbox-prev"
+          type="button"
+          aria-label="前の写真">
+          ‹
+        </button>
+        <img class="lightbox-img" alt="" />
+        <button
+          class="lightbox-btn lightbox-next"
+          type="button"
+          aria-label="次の写真">
+          ›
+        </button>
+        <div class="lightbox-caption" aria-live="polite"></div>
+      </div>
+    </div>
+
+    <!-- Access Video Modal -->
+    <div class="video-modal" id="accessVideoModal" aria-hidden="true">
+      <div
+        class="video-modal-inner"
+        role="dialog"
+        aria-modal="true"
+        aria-label="道順動画の再生">
+        <button class="video-modal-close" type="button" aria-label="閉じる">
+          ×
+        </button>
+        <video
+          class="video-modal-player"
+          playsinline
+          webkit-playsinline
+          controls
+          muted
+          preload="metadata"
+          src="video/snack_ike_route.mp4">
+          お使いの端末では動画を再生できません。
+        </video>
+        <p class="video-modal-caption">
+          住吉電停からスナック池までの道順です。
+        </p>
+      </div>
+    </div>
+
+    <script>
+      const slides = document.querySelectorAll(".slider img");
+      let current = 0;
+
+      function changeSlide() {
+        slides[current].classList.remove("active");
+        current = (current + 1) % slides.length;
+        slides[current].classList.add("active");
+      }
+
+      setInterval(changeSlide, 5000);
+
+      // 営業時間判定
+      function checkOpenStatus() {
+        const now = new Date();
+        const day = now.getDay();
+        const hour = now.getHours();
+        const minute = now.getMinutes();
+        const time = hour * 60 + minute;
+        const isHoliday = day === 0 || day === 2;
+        const isFriSat = day === 5 || day === 6;
+        const closingTime = isFriSat ? 2 * 60 : 1 * 60; // 金土は26時(深夜2時)、それ以外は25時(深夜1時)
+        const isOpen = !isHoliday && (time >= 19 * 60 || time < closingTime);
+        const dot = document.getElementById("statusDot");
+        const text = document.getElementById("statusText");
+
+        if (dot && text) {
+          if (isOpen) {
+            dot.style.background = "#4caf50";
+            text.style.color = "#4caf50";
+            text.textContent = "営業中";
+          } else {
+            dot.style.background = "#aaa";
+            text.style.color = "#aaa";
+            text.textContent = "営業時間外";
+            dot.style.animation = "none";
+          }
+        }
+      }
+
+      checkOpenStatus();
+
+      // スマホ固定ボタン：ファーストビューでは隠す／Contactに入ったら隠す
+      const fixedPhone = document.querySelector(".fixed-phone");
+      const hero = document.querySelector(".hero");
+      const contact = document.querySelector(".contact");
+
+      function updateFixedPhoneVisibility() {
+        if (!fixedPhone) return;
+        const heroHeight = hero ? hero.offsetHeight : 0;
+        const threshold = Math.max(160, heroHeight * 0.55);
+        const scrolledPastHero = window.scrollY > threshold;
+
+        // 「ご予約・お問い合わせはこちら」に入ったら固定ボタンを隠す
+        let contactInView = false;
+        if (contact) {
+          const contactRect = contact.getBoundingClientRect();
+          const viewportHeight = window.innerHeight;
+          contactInView = contactRect.top < viewportHeight;
+        }
+
+        const shouldShow = scrolledPastHero && !contactInView;
+        fixedPhone.classList.toggle("is-visible", shouldShow);
+      }
+
+      updateFixedPhoneVisibility();
+      window.addEventListener("scroll", updateFixedPhoneVisibility, {
+        passive: true,
+      });
+
+      // Gallery lightbox（左右で次の写真も見れる）
+      const galleryImages = Array.from(
+        document.querySelectorAll(".gallery-rail img"),
+      );
+      const lightbox = document.getElementById("lightbox");
+      const lightboxImg = lightbox
+        ? lightbox.querySelector(".lightbox-img")
+        : null;
+      const lightboxCaption = lightbox
+        ? lightbox.querySelector(".lightbox-caption")
+        : null;
+      const btnClose = lightbox
+        ? lightbox.querySelector(".lightbox-close")
+        : null;
+      const btnPrev = lightbox
+        ? lightbox.querySelector(".lightbox-prev")
+        : null;
+      const btnNext = lightbox
+        ? lightbox.querySelector(".lightbox-next")
+        : null;
+
+      let lightboxIndex = 0;
+      let touchStartX = null;
+
+      function setBodyScrollLocked(locked) {
+        document.body.style.overflow = locked ? "hidden" : "";
+      }
+
+      function renderLightbox() {
+        if (!lightboxImg || !lightboxCaption) return;
+        const img = galleryImages[lightboxIndex];
+        if (!img) return;
+        lightboxImg.src = img.currentSrc || img.src;
+        lightboxImg.alt = img.alt || "";
+        const caption = img.getAttribute("data-caption") || img.alt || "";
+        lightboxCaption.textContent =
+          `${lightboxIndex + 1} / ${galleryImages.length}` +
+          (caption ? `  ${caption}` : "");
+      }
+
+      function openLightbox(index) {
+        if (!lightbox || galleryImages.length === 0) return;
+        lightboxIndex = Math.max(0, Math.min(index, galleryImages.length - 1));
+        renderLightbox();
+        lightbox.classList.add("is-open");
+        lightbox.setAttribute("aria-hidden", "false");
+        setBodyScrollLocked(true);
+      }
+
+      function closeLightbox() {
+        if (!lightbox) return;
+        lightbox.classList.remove("is-open");
+        lightbox.setAttribute("aria-hidden", "true");
+        setBodyScrollLocked(false);
+      }
+
+      function prevImage() {
+        if (galleryImages.length === 0) return;
+        lightboxIndex =
+          (lightboxIndex - 1 + galleryImages.length) % galleryImages.length;
+        renderLightbox();
+      }
+
+      function nextImage() {
+        if (galleryImages.length === 0) return;
+        lightboxIndex = (lightboxIndex + 1) % galleryImages.length;
+        renderLightbox();
+      }
+
+      galleryImages.forEach((img, idx) => {
+        img.addEventListener("click", () => openLightbox(idx));
+      });
+
+      if (btnClose) btnClose.addEventListener("click", closeLightbox);
+      if (btnPrev) btnPrev.addEventListener("click", prevImage);
+      if (btnNext) btnNext.addEventListener("click", nextImage);
+
+      if (lightbox) {
+        lightbox.addEventListener("click", (e) => {
+          if (e.target === lightbox) closeLightbox();
+        });
+
+        lightbox.addEventListener("touchstart", (e) => {
+          const t = e.touches && e.touches[0];
+          touchStartX = t ? t.clientX : null;
+        });
+
+        lightbox.addEventListener("touchend", (e) => {
+          if (touchStartX == null) return;
+          const t = e.changedTouches && e.changedTouches[0];
+          const endX = t ? t.clientX : null;
+          if (endX == null) return;
+          const dx = endX - touchStartX;
+          touchStartX = null;
+          if (Math.abs(dx) < 40) return;
+          if (dx > 0) prevImage();
+          else nextImage();
+        });
+      }
+
+      // Access video modal
+      const accessVideoTrigger = document.querySelector(".access-video-card");
+      const accessVideoModal = document.getElementById("accessVideoModal");
+      const accessVideoPlayer = accessVideoModal
+        ? accessVideoModal.querySelector(".video-modal-player")
+        : null;
+      const accessVideoClose = accessVideoModal
+        ? accessVideoModal.querySelector(".video-modal-close")
+        : null;
+
+      function openAccessVideo() {
+        if (!accessVideoModal || !accessVideoPlayer) return;
+        accessVideoModal.classList.add("is-open");
+        accessVideoModal.setAttribute("aria-hidden", "false");
+        setBodyScrollLocked(true);
+        accessVideoPlayer.currentTime = 0;
+        accessVideoPlayer.play().catch(() => {});
+      }
+
+      function closeAccessVideo() {
+        if (!accessVideoModal || !accessVideoPlayer) return;
+        accessVideoModal.classList.remove("is-open");
+        accessVideoModal.setAttribute("aria-hidden", "true");
+        accessVideoPlayer.pause();
+        setBodyScrollLocked(false);
+      }
+
+      if (accessVideoTrigger) {
+        accessVideoTrigger.addEventListener("click", openAccessVideo);
+      }
+      if (accessVideoClose) {
+        accessVideoClose.addEventListener("click", closeAccessVideo);
+      }
+      if (accessVideoModal) {
+        accessVideoModal.addEventListener("click", (e) => {
+          if (e.target === accessVideoModal) closeAccessVideo();
+        });
+      }
+
+      document.addEventListener("keydown", (e) => {
+        const lightboxOpen = lightbox && lightbox.classList.contains("is-open");
+        const videoOpen =
+          accessVideoModal && accessVideoModal.classList.contains("is-open");
+
+        if (e.key === "Escape") {
+          if (videoOpen) {
+            closeAccessVideo();
+            return;
+          }
+          if (lightboxOpen) {
+            closeLightbox();
+            return;
+          }
+        }
+
+        if (!lightboxOpen) return;
+        if (e.key === "ArrowLeft") prevImage();
+        if (e.key === "ArrowRight") nextImage();
+      });
+    </script>
+  </body>
+</html>
